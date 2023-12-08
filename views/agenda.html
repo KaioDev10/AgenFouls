@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c07bd17838.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="stylesheet" href="/public/css/agenda.css">
+    <title>Agenda - AgenFouls</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="a">
+            <i class="fas fa-calendar" style="color: white; padding-right: 15px">
+            </i>Agenda
+        </h1>
+        <h2>
+            <a href="/login">Sair</a>
+        </h2>
+
+    </header>
+
+    <form action="#" class="bodyform">
+        <div class="cont">
+            <input type="text" name="inputlista" id="idinputlista" placeholder="Adicione sua tarefa" autocomplete="off">
+            <input type="date" name="datelista" id="iddatelista">
+            <button onclick="novaadicao()" id="btnplus"><i class="fa-solid fa-plus" style="color: rgb(0, 0, 0);"
+                    title="Adicione sua nova tarefa"></i></button>
+        </div>
+
+        <div class="lista">
+
+            <!---- list --->
+            <ol id="to-do-list">
+            </ol>
+
+        </div>
+
+    </form>
+    </main>
+</body>
+<script src="/public/js/agenda.js"></script>
+
+</html>

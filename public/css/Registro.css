@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url(../img/backgroundVerde.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center center;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Evite que o corpo seja menor que a tela */
+    margin: 0;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+    padding: 5vh;
+}
+
+.container {
+    background-color: #83f581;
+    width: 80%; /* Alterado para uma porcentagem maior para telas pequenas */
+    max-width: 400px; /* Adicionado um valor máximo para limitar a largura em telas grandes */
+    height: 60vh;
+    padding: 50px;
+    box-shadow: 0px 0px 15px #3BD659;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; /* Disposição dos itens em coluna */
+    justify-content: center; /* Centralização vertical dos itens */
+    align-items: center; /* Centralização horizontal dos itens */
+}
+
+.container label {
+    font-size: 25px; /* Unidade relativa para o tamanho da fonte */
+    color: black;
+    font-weight: bold;
+}
+
+.inputfield {
+    position: relative;
+    margin: 10px;
+    top: -4vh; /* Unidade relativa para posição superior */
+}
+
+.inputfield input {
+    font-size: 20px;
+    padding-left: 5px;
+    width: 100%; /* Alterado para 100% para ocupar a largura do container */
+    height: 40px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: none;
+}
+
+.inputfield input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px; /* Unidade relativa para o tamanho da fonte */
+}
+
+button {
+    width: 100%; /* Alterado para 100% para ocupar a largura do container */
+    max-width: 200px; /* Adicionado um valor máximo para limitar a largura em telas grandes */
+    height: 4vh;
+    margin: 5px;
+    margin-left: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #51D600;
+    box-shadow: 0px 0px 20px #A3FA00;
+}
+
+button a{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Media query para ajustar estilos em telas menores */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    .container label,
+    .inputfield input,
+    button {
+        font-size: 4vw;
+    }
+}
